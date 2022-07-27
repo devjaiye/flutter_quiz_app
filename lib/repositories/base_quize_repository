@@ -1,0 +1,8 @@
+abstract class BaseQuizeRepository{
+    Future<List<Question>> getQuestions({
+        int numQuestions, 
+        int categoryId,
+        Difficulty difficulty,
+    })
+  
+    }
