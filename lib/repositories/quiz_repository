@@ -1,0 +1,15 @@
+
+
+final dioProvider = Provider<Dio> ((ref) => Dio())
+
+final quizRepositoryProvider = 
+    Provider<QuizRepository>((ref) =>QuizRepository(ref.read))
+
+class QuizRepository extends BaseQuizeRepository{
+
+    final Reader _read    //..allows the QuizRepository to read other providers in the app
+QuizRepository(this._read)
+
+
+
+}
