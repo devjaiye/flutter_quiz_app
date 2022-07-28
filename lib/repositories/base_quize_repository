@@ -1,6 +1,6 @@
 abstract class BaseQuizeRepository{
     Future<List<Question>> getQuestions({
-        int numQuestions, 
+        int numQuestions,  //..now many ques the API will return 
         int categoryId,
         Difficulty difficulty,
     })
